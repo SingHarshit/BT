@@ -1,0 +1,16 @@
+{
+  "C:\\Users\\ASUS\\OneDrive\\Desktop\\BankAccount\\contracts\\BankAccount.sol": {
+    "jobHash": "solc-0_8_28-eee946126d10128c4b5cebf9e3484756db3019a8",
+    "isolated": false,
+    "compilerType": "solc",
+    "artifactPaths": [
+      "C:\\Users\\ASUS\\OneDrive\\Desktop\\BankAccount\\artifacts\\contracts\\BankAccount.sol\\BankAccount.json"
+    ],
+    "buildInfoPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\BankAccount\\artifacts\\build-info\\solc-0_8_28-eee946126d10128c4b5cebf9e3484756db3019a8.json",
+    "buildInfoOutputPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\BankAccount\\artifacts\\build-info\\solc-0_8_28-eee946126d10128c4b5cebf9e3484756db3019a8.output.json",
+    "typeFilePath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\BankAccount\\artifacts\\contracts\\BankAccount.sol\\artifacts.d.ts",
+    "wasm": false,
+    "artifactsDirectory": "C:\\Users\\ASUS\\OneDrive\\Desktop\\BankAccount\\artifacts",
+    "emitsTypeDeclarations": true
+  }
+}

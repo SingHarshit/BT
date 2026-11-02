@@ -1,0 +1,42 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_28-eee946126d10128c4b5cebf9e3484756db3019a8",
+  "solcVersion": "0.8.28",
+  "solcLongVersion": "0.8.28+commit.7893614a",
+  "compilerType": "solc",
+  "userSourceNameMap": {
+    "contracts/BankAccount.sol": "project/contracts/BankAccount.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "cancun",
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode.linkReferences",
+            "evm.bytecode.object",
+            "evm.bytecode.opcodes",
+            "evm.bytecode.sourceMap",
+            "evm.deployedBytecode.immutableReferences",
+            "evm.deployedBytecode.linkReferences",
+            "evm.deployedBytecode.object",
+            "evm.deployedBytecode.opcodes",
+            "evm.deployedBytecode.sourceMap",
+            "evm.methodIdentifiers"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/BankAccount.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract BankAccount {\r\n    uint256 public balance;\r\n\r\n    function deposit() public payable {\r\n        require(msg.value > 0, \"Amount must be greater than zero\");\r\n        balance += msg.value;\r\n    }\r\n\r\n    function withdraw(uint256 amount) public {\r\n        require(amount > 0, \"Invalid amount\");\r\n        require(amount <= balance, \"Insufficient balance\");\r\n\r\n        balance -= amount;\r\n        payable(msg.sender).transfer(amount);\r\n    }\r\n\r\n    function showBalance() public view returns (uint256) {\r\n        return balance;\r\n    }\r\n}"
+      }
+    }
+  }
+}
